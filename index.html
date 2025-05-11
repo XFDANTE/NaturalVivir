@@ -39,6 +39,36 @@
 
 <body class="index-page">
 <!-- Botón flotante de WhatsApp -->
+ <!-- Botón flotante con icono de libro que abre PDF -->
+<style>
+  .book-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 20px;
+    left: 20px;
+    background-color: #6f42c1;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+    text-decoration: none;
+  }
+  .book-float:hover {
+    transform: scale(1.1);
+  }
+</style>
+
+<a href="assets/pdf/NATURALVIVIR_CATALOGO.pdf" class="book-float" target="_blank" aria-label="Abrir PDF">
+  <i class="bi bi-book"></i>
+</a>
+
 <style>
   .whatsapp-float {
     position: fixed;
@@ -536,6 +566,7 @@
           <div class="social-links d-flex mt-4">
             <a href="https://www.facebook.com/profile.php?id=100063786176292"><i class="bi bi-facebook"></i></a>
           </div>
+
         </div>
 
       </div>
